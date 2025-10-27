@@ -10,4 +10,11 @@ import { Component, Input } from '@angular/core';
 export class Studente {
   @Input() nome!: string;
   @Input() classe!: string;
+  @Input() mediaVoti!: number;
+
+  mostraMedia = false;
+
+  toggleMedia() {
+    this.mostraMedia = !this.mostraMedia;
+  }
 }
