@@ -1,7 +1,8 @@
-<p>pagina3 works!</p>
+<h1>LISTA STUDENTI</h1>
 <app-studente
     *ngFor="let studente of studenti"
     [nome]="studente.nome"
     [classe]="studente.classe"
-    [mediaVoti]='studente.mediaVoti'>
+    [mediaVoti]="studente.mediaVoti"
+    [id]="studente.id">
 </app-studente>
