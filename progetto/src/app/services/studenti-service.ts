@@ -15,4 +15,9 @@ export class StudentiService {
   getStudenti() {
     return this.studenti;
   }
+
+  addStudente(studente: any) {
+    studente.id = this.studenti.length + 1;
+    this.studenti.push(studente);
+  }
 }
