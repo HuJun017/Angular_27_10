@@ -4,6 +4,7 @@ import { Routes } from '@angular/router';
 import { Pagina1 } from './pagina1/pagina1';
 import { Pagina2 } from './pagina2/pagina2';
 import { Pagina3 } from './pagina3/pagina3';
+import { DettaglioStudente } from './dettaglio-studente/dettaglio-studente';
 
 export const routes: Routes = [
     //se l’URL è vuoto, vai su /pagina1
@@ -14,4 +15,5 @@ export const routes: Routes = [
     { path: 'pagina3', component: Pagina3 },
     //SINTASSI
     //{ path: 'url', component: Componente},
+    { path: 'pagina3/:id', component: DettaglioStudente },
 ];
