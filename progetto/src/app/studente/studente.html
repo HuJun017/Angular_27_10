@@ -1,8 +1,5 @@
-<div style="border:2px dashed black; padding:12px; margin:12px 0;">
+<div style="border:2px dashed black; padding:12px; margin:12px;">
     <h2>{{ nome }}</h2>
-    <p>{{ classe}}</p>
-    <p *ngIf="mostraMedia">{{ mediaVoti}}</p>
-    <button (click)="toggleMedia()">
-        {{ mostraMedia ? 'Nascondi media voti' : 'Mostra media voti' }}
-    </button>
+    <a [routerLink]="['/pagina3', id]">Mostra dettagli</a>
+    <p *ngIf="mostraMedia">{{ mediaVoti }}</p>
 </div>
